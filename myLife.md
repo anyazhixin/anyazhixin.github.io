@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "myLife"
-permalink: /https://anyazhixin.github.io/myLife/
+permalink: /myLife/
 ---
 
 YEAR 2021
