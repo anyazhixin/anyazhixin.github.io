@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "myLife"
+title: myLife
 permalink: /myLife/
 ---
 
