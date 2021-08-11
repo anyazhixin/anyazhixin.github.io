@@ -18,19 +18,70 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 邬文亮的空间
-email: wuwenlianglzlb@126.com
-description: >- # this means to ignore newlines until "baseurl:"
-  记录我的生活经历、学习经验等
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-wechat_username: zlbarelikediamond
-github_username:  anyazhixin
+title               : 邬文亮的空间
+subtitle            :
+name                : 邬文亮
+email               : wuwenlianglzlb@126.com
+description         : >- # this means to ignore newlines until "baseurl:"
+                      欢迎来到我的空间！
+                      这里记录着我的生活经历、学习经验、所闻所想。
+url                 : "https://anyazhixin.github.io" # Jekyll 3.3 overrides this value with url: http://localhost:4000 when running jekyll serve locally in development. If you want to avoid this behavior set JEKYLL_ENV=production to force the environment to production.
+baseurl             : # the subpath of your site, e.g. /blog
+repository          : "anyazhixin/anyazhixin.github.io"
+teaser              : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title      : 一粒小尘埃 # overrides the website title displayed in the masthead, use " " for no title
+# date_format: "%Y-%m-%d"
+# words_per_minute: 250 # 影响read_time的展示
+locale              : zh-CN
+search              : true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      author:
+        name: 邬文亮
+        avatar: "/assets/images/3cd7dc7584bd8ed261b7a2534bf247343148fe1ad3fab8fff.jpg"
+        bio: 亚欧大陆千年龙渊环建设特区纯红灵脉孕育，历经新世纪长达324旬的神之恩惠洗礼
+        location: 海淀区，北京
+        links:
+          - label: Steam
+            icon: "fab fa-fw fa-steam"
+            url: ""
+          - label: Github
+            icon: "fab fa-fw fa-github"
+            url: "https://github.com/anyazhixin"
+
+paginate: 10
+
+comments:
+  provider: disqus
+  disqus:
+    shortname: 
+
+# 链接到外部feed
+# atom_feed:
+#  path:
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: mint
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+
+include: 
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
